@@ -48,6 +48,21 @@ app.get('/', (req, res) => {
   })
 });
 
+// /projects
+//make view file
+//render header and footer and portFolio page here message
+//in header - new link to projects page
+//commit
+//push
+//push to heroku remote - git push heroku
+
+app.get('/projects',(req,res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Project Page',
+    projectMessage: 'This is my portfolio page'
+  })
+});
+
 app.get('/about',(req,res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page',
